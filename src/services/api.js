@@ -12,7 +12,7 @@ axios.interceptors.request.use(
   (error) => Promise.reject(error)
 );
 
-const API_BASE = '';  // Empty string for proxy - will use /api from proxy config
+const API_BASE = import.meta.env.VITE_API_URL || '';  // Empty string for proxy - will use /api from proxy config
 
 // Medicine APIs
 export const medicineAPI = {

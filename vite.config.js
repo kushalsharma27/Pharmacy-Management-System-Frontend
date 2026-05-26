@@ -6,13 +6,11 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      // Auth endpoints - no /api prefix
       '/auth': {
         target: 'http://localhost:8080',
         changeOrigin: true,
         secure: false,
       },
-      // All other API endpoints - with /api prefix
       '/api': {
         target: 'http://localhost:8080',
         changeOrigin: true,
