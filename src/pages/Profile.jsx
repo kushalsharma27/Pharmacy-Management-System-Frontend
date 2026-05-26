@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { getCurrentUser } from '../services/authService';
 import { useNavigate } from 'react-router-dom';
-import { useTheme } from '../context/ThemeContext'; // Add this import
+import { useTheme } from '../Context/ThemeContext'; // Add this import
 import {
   User,
   Mail,
