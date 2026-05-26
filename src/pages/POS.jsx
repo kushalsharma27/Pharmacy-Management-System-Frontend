@@ -423,4 +423,3 @@ function POS() {
 }
 
 export default POS;
-quantity
