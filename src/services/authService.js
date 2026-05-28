@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Login uses /auth (no /api)
-const AUTH_URL = 'http://localhost:8080/auth';
+const AUTH_URL = `${import.meta.env.VITE_API_URL || ''}/auth`;
 
 // Store token in localStorage
 const setAuthToken = (token) => {
